@@ -1,0 +1,56 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <h1>Orden Llegada Trabajo</h1>
+    </div>
+    <hr>
+    <!-- Login Form -->
+    <form [formGroup]="editarForm" (ngSubmit)="onHorario()">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="radio" id="primero"  value="primero" formControlName="seleccion"  >
+            <label for="primero">Primero en LLegar</label>
+          </div>
+
+        </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="radio" id="ultimo"  value="ultimo"  formControlName="seleccion" >
+              <label for="ultimo">Ultimo en Llegar</label>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="text" id="resultado" class="fadeIn second"  placeholder="resultado" formControlName="resultado" readonly="true" >
+            </div>
+          </div>
+      </div> 
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="submit" class="fadeIn fourth" value="Consultar">
+          </div>
+        </div> 
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="reset" (click)="onRegresar()" class="fadeIn fourth " value="Regresar">
+          </div>
+        </div>  
+      </div>
+
+      
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Prueba Tecnica BPT</a>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <h1>Invertir Número Entero Positivo</h1>
+      </div>
+      <hr>
+      <!-- Login Form -->
+      <form  (ngSubmit)="onNumeroInverso()" [formGroup]="editarForm" >
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="text" id="numero" requerid class="fadeIn second"  formControlName="numeroNormal" >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="text" class="form-control" id="resultado" name="resultado" readonly="true" class="fadeIn second" formControlName="numeroInvertido">
+            </div>
+          </div>
+        </div>        
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="submit" class="fadeIn three" value="Invertir" >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="reset" (click)="onRegresar()" class="fadeIn three" value="Regresar" >
+            </div>
+          </div>          
+        </div>         
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Prueba Tecnica BPT</a>
+      </div>
+  
+    </div>
+  </div>
